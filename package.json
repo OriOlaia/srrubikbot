@@ -1,13 +1,16 @@
 {
-  "name": "theentitybot",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+
+  },
+  "name": "srrubikbot",
+  "description": "Bot Los Rabincitos",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "engines": {
+    "node": "22.x"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@discordjs/builders": "^1.10.0",
     "@discordjs/rest": "^2.4.2",
@@ -17,5 +20,12 @@
     "node-fetch": "^3.3.2",
     "puppeteer": "^24.1.1"
   },
-  "description": ""
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OriOlaia/srrubikbot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OriOlaia/srrubikbot/issues"
+  },
+  "homepage": "https://github.com/OriOlaia/srrubikbot#readme"
 }
