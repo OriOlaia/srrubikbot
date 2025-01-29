@@ -41,7 +41,7 @@ client.on(Events.MessageCreate, async (message) => {
 // YOUTUBE SHORT / COMPLETOS
 // 🔴 YouTube Shorts
 async function checkYouTube() {
-    const apiUrl = `https://www.googleapis.com/youtube/v3/search?key=${process.env.YOUTUBE_API_KEY}&channelId=${process.env.YOUTUBE_CANAL}&part=snippet,id&order=date&maxResults=5`;
+    const apiUrl = `https://www.googleapis.com/youtube/v3/search?key=${'AIzaSyDXAsvCjN45g0kyNhRUySZipomg-O91bXQ'}&channelId=${'UCQSeqLWOzIzYbbTl8Lx05YA'}&part=snippet,id&order=date&maxResults=5`;
 
     try {
         const response = await axios.get(apiUrl);
@@ -104,7 +104,7 @@ async function checkInstagram(username) {
 
 // 📩 Enviar mensaje a Discord
 async function sendDiscordMessage(message) {
-    const channel = client.channels.cache.get(process.env.DISCORD_CANAL);
+    const channel = client.channels.cache.get('1025185900101124116');
     if (channel) {
         channel.send(message);
     } else {
@@ -120,4 +120,4 @@ client.once("ready", () => {
 });
 
 // Conectar el bot
-client.login(process.env.TOKEN_BOT);
+client.login('MTMzMzc0MTM4NzcyMzgzNzQ1MA.G8FtMf.__exE5UACXyGjjEYK6WuYWugTyfV8F2TZeDYuA');
